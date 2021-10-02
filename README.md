@@ -5,9 +5,11 @@ Hayatınızı düzene sokmakta fayda sağlayan bir mobil uygulama projesidir. G�
 
 
 ## Ekran Görüntüleri
+
 Ana menü|Aktiviteler Sayfası|Aktivitelerin Ajandası|Aktivite Oluşturma Sayfası|Görev Sayfası|Rutin Sayfası|Rutin Ekleme Sayfası|
 :-:|:-:|:-:|:-:|:-:|:-:|:-:|
-![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211929.png?raw=true)|![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211124.png?raw=true)![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211104.png?raw=true)![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211149.png?raw=true)![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211767.png?raw=true)![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211911.png?raw=true)![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211778.png?raw=true)
+![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211929.png?raw=true)|![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211124.png?raw=true)|![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211104.png?raw=true)|![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211149.png?raw=true)|![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211767.png?raw=true)|![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211911.png?raw=true)|![](https://github.com/flyboy12/festtask/blob/main/assets/github-image/Screenshot_1633211778.png?raw=true)
+
 ## Bilgisayarınızda Çalıştırın
 
 Projeyi klonlayın
@@ -27,15 +29,12 @@ Kaynak kodunun otomatik sekronize edilmesini sağlamak için bu komutu girin:
 ```bash
 flutter packages pub run build_runner watch
 ```
-
-
-
+  
   
 ## Özellikler
 
 - Bildirim Özelliği
 - Grafiksel Destek
-
 
   
 ## Kütüphaneler & Kullanılan Araçlar
