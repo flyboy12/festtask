@@ -3,8 +3,8 @@ import 'package:festtask/models/event.dart';
 import 'package:festtask/models/routine.dart';
 import 'package:festtask/models/task.dart';
 import 'package:festtask/provider/notification.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:hive/hive.dart';
+import 'package:flutter/material.dart';
 
 class MainProvider extends ChangeNotifier {
   static const _boxTaskName = "taskBox";
@@ -69,17 +69,20 @@ class MainProvider extends ChangeNotifier {
               element.isFinish == false)
           .length
           .toDouble();
-  double get taskTotal => _taskList.isEmpty ? 1.0 : taskList.length.toDouble();
+  double get taskTotal => taskBox.isEmpty ? 1.0 : taskBox.length.toDouble();
   double get taskNotFinish =>
-      _taskList.where((e) => e.isFinish == false).isEmpty
+      taskBox.values.where((e) => e.isFinish == false).isEmpty
           ? 0
-          : taskList.length.toDouble();
+          : taskBox.values.where((e) => e.isFinish == false).length.toDouble();
   double get routineTotal =>
       routineBox.values.isEmpty ? 1.0 : routineBox.values.length.toDouble();
   double get routineNotFinish =>
       routineBox.values.where((element) => element.isFinish == false).isEmpty
           ? 0
-          : routineList.length.toDouble();
+          : routineBox.values
+              .where((element) => element.isFinish == false)
+              .length
+              .toDouble();
   Future<void> selectTaskBottomIndex(int i) async {
     _selectedTaskBottomIndex = i;
     await loadTask();
